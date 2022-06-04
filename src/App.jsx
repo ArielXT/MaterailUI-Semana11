@@ -1,15 +1,13 @@
-import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from "@mui/material/styles";
 import theme from "./theme";
-import { Homeview } from './pages';
-import './App.css'
+import Router from "./router";
+import "./App.css";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-        <Homeview/>
-      </div>
+      <Router />
     </ThemeProvider>
-  )
+  );
 }
 export default App
